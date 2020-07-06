@@ -73,22 +73,22 @@ export default [{
     },
     {
         name: 'Boo',
-        positions: [SHORT_HAIR, TEAM, LEAD, WHEEL, MALE],
+        tags: [SHORT_HAIR, TEAM, LEAD, WHEEL, MALE],
         image: 'boo.png'
     },
     {
         name: 'Jenga',
-        positions: [NEUTERED, ASSERTIVE, SHORT_HAIR, COMMAND_LEAD, TEAM, FEMALE],
+        tags: [NEUTERED, ASSERTIVE, SHORT_HAIR, COMMAND_LEAD, TEAM, FEMALE],
         image: 'jenga.png'
     },
     {
         name: 'Biggie',
-        positions: [YEARLING, TEAM, WHEEL, MALE],
+        tags: [YEARLING, TEAM, WHEEL, MALE],
         image: 'biggie.png'
     },
     {
         name: 'Grinch',
-        positions: [NEUTERED, TEAM, WHEEL, MALE],
+        tags: [NEUTERED, TEAM, WHEEL, MALE],
         image: 'grinch.png'
     },
 ]
