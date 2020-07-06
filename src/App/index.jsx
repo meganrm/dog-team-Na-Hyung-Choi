@@ -9,8 +9,15 @@ import FilterSelector from '../components/FilterSelector';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      selectedFilters: []
+    }
+  }
+
   setTags = (tags) => {
-    console.log(tags)
+    this.setState({ selectedFilters: tags });
   }
 
   render() {
@@ -25,7 +32,7 @@ class App extends Component {
 
           </Row>
           <Row className="DogTeam" gutter={16}>
-            {getAvailableDogs(allDogs).map(dog => (<DogCard
+            {getAvailableDogs(allDogs, this.state.selectedFilters).map(dog => (<DogCard
               key={dog.name}
               name={dog.name}
               image={dog.image}
